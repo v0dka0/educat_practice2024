@@ -24,5 +24,21 @@ namespace WpfApp1
         {
             InitializeComponent();
         }
+
+        private void BackBut_Click(object sender, RoutedEventArgs e)
+        {
+            if (MainF.CanGoBack) MainF.GoBack();
+        }
+
+        private void MainF_Navigated(object sender, NavigationEventArgs e)
+        {
+            if (!(e.Content is Page page)) return;
+            this.Title = $"Melnikov_520 - {page.Title}";
+
+            if (page is Pages.AuthPage)
+                BackBut.Visibility = Visibility.Hidden;
+            else
+                BackBut.Visibility = Visibility.Visible;
+        }
     }
 }

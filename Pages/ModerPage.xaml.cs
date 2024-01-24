@@ -16,18 +16,13 @@ using System.Windows.Shapes;
 namespace WpfApp1.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для AuthPage.xaml
+    /// Логика взаимодействия для ModerPage.xaml
     /// </summary>
-    public partial class AuthPage : Page
+    public partial class ModerPage : Page
     {
-        public AuthPage()
+        public ModerPage()
         {
             InitializeComponent();
-        }
-
-        private void Reg_Click(object sender, RoutedEventArgs e)
-        {
-            NavigationService?.Navigate(new RegPage());
         }
     }
 }

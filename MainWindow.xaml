@@ -6,12 +6,12 @@
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
         Title="MainWindow" Height="500" Width="800" Background="LightGray" WindowStartupLocation="CenterScreen">
-    <Grid>
+    <Grid >
         <Grid.RowDefinitions>
             <RowDefinition Height="50"></RowDefinition>
             <RowDefinition Height="450"></RowDefinition>
         </Grid.RowDefinitions>
-        <Frame Name="MainF" Source="Pages/AuthPage.xaml" NavigationUIVisibility="Hidden" Margin="0,0,0,0" Grid.Row="1"/>
-        <Button Name="BackBut" Content="Назад" FontSize="18" Margin="10,10,642,10" VerticalAlignment="Center" Height="auto" Width="auto"/>
+        <Frame Name="MainF" Source="Pages/AuthPage.xaml" NavigationUIVisibility="Hidden" Margin="0,0,0,0" Grid.Row="1" Navigated="MainF_Navigated"/>
+        <Button Name="BackBut" Content="Назад" FontSize="20" Margin="10,0,0,0" VerticalAlignment="Center" Height="auto" Width="148" Click="BackBut_Click" HorizontalAlignment="Left"/>
     </Grid>
 </Window>

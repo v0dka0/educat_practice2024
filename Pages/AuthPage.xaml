@@ -27,6 +27,6 @@
         <Label Grid.Row="0" Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Center" Content="Логин" HorizontalContentAlignment="Right" FontSize="20"/>
         <Label Grid.Column="0" Grid.Row="1" Content="Пароль" FontSize="20" HorizontalAlignment="Right" HorizontalContentAlignment="Right" VerticalAlignment="Center"/>
         <Button Name="Entr" Content="Войти" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center" Width="234" Height="35" Grid.Column="1" FontSize="20" Margin="10,10,10,10"/>
-        <Button Name="Reg" Content="Регистрация" Grid.Row="3" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Width="234" Height="35" FontSize="20" Margin="10,10,10,10"/>
+        <Button Name="Reg" Content="Регистрация" Grid.Row="3" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Width="234" Height="35" FontSize="20" Margin="10,10,10,10" Click="Reg_Click"/>
     </Grid>
 </Page>
