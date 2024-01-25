@@ -1,0 +1,26 @@
+﻿<Page x:Class="WpfApp1.Pages.StudPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfApp1.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="StudPage">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="350"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"></ColumnDefinition>
+            <ColumnDefinition Width="400"></ColumnDefinition>
+            <ColumnDefinition Width="200"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <TextBlock x:Name="Name" Text="Фамилия Имя Отчество Группа:номер группы" FontSize="20" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" HorizontalAlignment="Left"/>
+        <Label Content="Ваши тесты" FontSize="20" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2"/>
+        <DataGrid Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="2" d:ItemsSource="{d:SampleData ItemCount=5}" FontSize="20"/>
+    </Grid>
+</Page>
